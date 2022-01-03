@@ -36,7 +36,7 @@ if (file_exists('db.json')) {
     </div>
 
     <div class="create-btn">
-        <a href="<?php echo 'http://localhost:8000/' . '/' . 'create.php' ?>">
+        <a href="<?php echo 'create.php' ?>">
             <button class="btn btn-success">Add Entry</button>
         </a>
     </div>
@@ -67,7 +67,7 @@ if (file_exists('db.json')) {
                         <td class="text-center"><?php echo $obj['isbn']; ?></td>
                         <td class="text-center"><?php echo $obj['pages']; ?></td>
                         <td class="text-center">
-                            <a href="<?php echo 'http://localhost:8000/' . '/' . 'delete.php?' . 'id=' . $key; ?>" onclick="return confirm('Are you sure?')">
+                            <a href="<?php echo 'delete.php?' . 'id=' . $key; ?>" onclick="return confirm('Are you sure?')">
                                 <button class="btn btn-danger">Delete</button>
                             </a>
                         </td>
