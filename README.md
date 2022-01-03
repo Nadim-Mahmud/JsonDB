@@ -1,1 +1,1 @@
-Implementing Json based database and CRUD operations
+This repository contains Json based database and CRUD operations
