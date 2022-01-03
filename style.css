@@ -38,3 +38,19 @@
   margin-left: 10px;
 
 }
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.form-head{
+  font-size: small;
+}
+
+.create-btns{
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}

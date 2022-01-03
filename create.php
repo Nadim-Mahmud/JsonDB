@@ -41,30 +41,40 @@ if (isset($_GET['title'])) {
 </head>
 
 <body class="create-body">
-    <form action="" method="get">
-        <div>
-            <label>Title</label>
-            <input type="text" name="title" />
-        </div>
-        <div>
-            <label>Author</label>
-            <input type="text" name="author" />
-        </div>
-        <div>
-            <label>Available</label>
-            <input type="text" name="available" />
-        </div>
-        <div>
-            <label>Pages</label>
-            <input type="text" name="pages" />
-        </div>
-        <div>
-            <label>ISBN</label>
-            <input type="text" name="isbn" />
-        </div>
-        <input type="submit" value="Create" />
-    </form>
 
+    <h1 class="title"> Enter book informations</h1>
+
+    <div class="form-container">
+        <form class="" action="" method="get">
+            <div>
+                <label class="form-head">Title</label>
+                <br>
+                <input type="text" name="title" />
+            </div>
+            <div>
+                <label class="form-head">Author</label>
+                <br>
+                <input type="text" name="author" />
+            </div>
+            <div>
+                <label class="form-head">Available</label>
+                <br>
+                <input type="text" name="available" />
+            </div>
+            <div>
+                <label class="form-head">Pages</label>
+                <br>
+                <input type="text" name="pages" />
+            </div>
+            <div>
+                <label class="form-head">ISBN</label>
+                <br>
+                <input type="text" name="isbn" />
+            </div>
+            <input class="btn btn-success create-btns" type="submit" value="Create" />
+        </form>
+
+    </div>
 
     <!-- bootstrap scripts -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
