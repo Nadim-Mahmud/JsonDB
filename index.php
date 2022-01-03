@@ -29,7 +29,7 @@ if (file_exists('db.json')) {
     <div class="search-bar ">
         <form action="search.php" method="post">
 
-            <label style="font-size: large;">Seach by Author : </label>
+            <label style="font-size: large;">Search by Author : </label>
             <input type="text" class="input-field" name="search" />
             <input type="submit" class="input-field" value="Search" />
         </form>
