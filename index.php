@@ -24,15 +24,23 @@ if (file_exists('db.json')) {
 
 <body>
 
-    <div class="d-flex justify-content-center">
-        <h1> Book Shelf</h1>
+    <h1 class="title">Book Shelf</h1>
+
+    <div class="search-bar ">
+        <form action="search.php" method="post">
+
+            <label style="font-size: large;">Seach by Author : </label>
+            <input type="text" class="input-field" name="search" />
+            <input type="submit" class="input-field" value="Search" />
+        </form>
     </div>
 
-    <form class="search-bar" action="search.php" method="post">
-        <label>Seach by Author :</label>
-        <input type="text" name="search" />
-        <input type="submit" value="Search" />
-    </form>
+    <div class="create-btn">
+        <a href="<?php echo 'http://localhost:8000/' . '/' . 'create.php' ?>">
+            <button class="btn btn-success">Add Entry</button>
+        </a>
+    </div>
+
     <br>
     <div>
         <table class="table-main table table-striped table-sm">
@@ -60,19 +68,13 @@ if (file_exists('db.json')) {
                         <td class="text-center"><?php echo $obj['pages']; ?></td>
                         <td class="text-center">
                             <a href="<?php echo 'http://localhost:8000/' . '/' . 'delete.php?' . 'id=' . $key; ?>" onclick="return confirm('Are you sure?')">
-                                <button class="btn-create">Delete</button>
+                                <button class="btn btn-danger">Delete</button>
                             </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-    </div>
-
-    <div>
-        <a href="<?php echo 'http://localhost:8000/' . '/' . 'create.php' ?>">
-            <button class="btn-create">Create</button>
-        </a>
     </div>
 
     <!-- bootstrap scripts -->
