@@ -45,7 +45,7 @@ if (isset($_GET['title'])) {
 
     <?php include 'navbar.html'; ?>
 
-    <h1 class="title-ad" style="text-align:center; font-family: 'Times New Roman', Times, serif; font-weight: bold; margin-bottom: 30px;"> Enter book informations</h1>
+    <h1 class="title-ad mt-3" style="text-align:center; font-family: 'Times New Roman', Times, serif; font-weight: bold; margin-bottom: 30px;"> Enter book informations</h1>
 
     <!-- Styled -->
 
