@@ -22,6 +22,11 @@
   float:left
 }
 
+.add-entry{
+  justify-content: left;
+}
+
+
 .create-btn{
   float: right;
   margin-right: 60px;
