@@ -24,7 +24,7 @@
 
 .create-btn{
   float: right;
-  margin-right: 70px;
+  margin-right: 60px;
 }
 
 .input-field{
@@ -53,4 +53,8 @@
   display: flex;
   margin-top: 10px;
   justify-content: center;
+}
+
+.form-container{
+  margin: 0px ;
 }
