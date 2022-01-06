@@ -90,7 +90,7 @@ if (file_exists('db.json')) {
                         <td class="text-center"><?php echo $obj['pages']; ?></td>
                         <td class="text-center">
                             <a href="<?php echo 'delete.php?' . 'id=' . $key; ?>" onclick="return confirm('Are you sure?')">
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
                             </a>
                         </td>
                     </tr>
