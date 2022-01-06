@@ -17,27 +17,28 @@ if (file_exists('db.json')) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Book Store</title>
+    <title>Book Shelf</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <h1 class="title">Book Shelf</h1>
+    <?php include 'navbar.html';?>
+
+  
+    <!-- <h1 class="title">Book Shelf</h1> -->
 
 
-    <div class="container search-pr">
+    <!-- <div class="container search-pr">
         <div class="row">
-            <div class="col-sm-4">
-            <form action="search.php" method="POST">
-                <div class="input-group mb-3">
-                    <input type="text" name="search" placeholder="Search by title" >
-                    <input type="submit" class="btn btn-primary" type="button" value="Search"></input>
-                </div>
-            </form>
-            </div>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
+                <form action="search.php" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" name="search" placeholder="Search anything">
+                        <input type="submit" class="btn btn-primary" type="button" value="Search"></input>
+                    </div>
+                </form>
             </div>
             <div class="col-sm-2">
                 <a class="add-entry" href="<?php echo 'create.php' ?>">
@@ -45,26 +46,8 @@ if (file_exists('db.json')) {
                 </a>
             </div>
         </div>
-    </div>
-
-    <!-- 
-    <div class="search-bar ">
-        <form action="search.php" method="post">
-
-            <label style="font-size: large;">Search by Author : </label>
-            <input type="text" class="input-field" name="search" />
-            <input type="submit" class="input-field" value="Search" />
-        </form>
-    </div>
-
-    <div class="create-btn">
-        <a href="<?php echo 'create.php' ?>">
-            <button class="btn btn-success">Add Entry</button>
-        </a>
     </div> -->
-
-    <br>
-    <div>
+    <div class="table-container">
         <table class="table-main table table-striped table-sm">
             <thead class="table-head">
                 <tr>

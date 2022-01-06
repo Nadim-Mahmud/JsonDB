@@ -23,6 +23,8 @@ if (isset($_GET['title'])) {
     $db_enc = json_encode($db);
     file_put_contents('db.json', $db_enc);
 
+    $added = true;
+
     header('Location: index.php');
 }
 
@@ -41,7 +43,9 @@ if (isset($_GET['title'])) {
 
 <body class="create-body">
 
-    <h1 class="title"> Enter book informations</h1>
+    <?php include 'navbar.html';?>
+
+    <h1 class="title-create"> Enter book informations</h1>
 
     <!-- Styled -->
 
@@ -79,7 +83,7 @@ if (isset($_GET['title'])) {
             </div>
 
 
-            <button type="submit" class="form-sub btn btn-success">Create</button>
+            <button type="submit" class="form-sub btn btn-success ">Create</button>
         </form>
 
     </div>
