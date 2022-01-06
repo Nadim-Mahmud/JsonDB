@@ -16,7 +16,7 @@ $entries = array();
 
 if (isset($_POST['search'])) {
     $key1 = $_POST['search'];
-    $option = 'author'; //$_POST['search_by'];
+    $option = 'title'; //$_POST['search_by'];
 
     foreach ($db as $key => $obj) :
         if (strpos($obj[$option], $key1) !== false) {

@@ -32,7 +32,7 @@ if (file_exists('db.json')) {
             <div class="col-sm-4">
             <form action="search.php" method="POST">
                 <div class="input-group mb-3">
-                    <input type="text" name="search" placeholder="Search Key" >
+                    <input type="text" name="search" placeholder="Search by title" >
                     <input type="submit" class="btn btn-primary" type="button" value="Search"></input>
                 </div>
             </form>
