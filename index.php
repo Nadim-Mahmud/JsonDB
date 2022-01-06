@@ -41,7 +41,7 @@ if (file_exists('db.json')) {
                 </form>
             </div>
             <div class="col-sm-2">
-                <a class="add-entry" href="<?php echo 'create.php' ?>">
+                <a class="add-entry" href="<?php //echo 'create.php' ?>">
                     <button class="btn btn-success">Add Entry</button>
                 </a>
             </div>

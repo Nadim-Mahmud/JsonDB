@@ -45,7 +45,7 @@ if (isset($_GET['title'])) {
 
     <?php include 'navbar.html';?>
 
-    <h1 class="title-create"> Enter book informations</h1>
+    <h1 class="title-add"> Enter book informations</h1>
 
     <!-- Styled -->
 
